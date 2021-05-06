@@ -17,20 +17,27 @@ Camera  | 12 MP + 5MP, dual pixel PDAF, dual-LED (dual tone) flash
 Release Date | August 2018
 
 ## Features
-- Always updates with latest caf & linux tag
-- Compiled Using Proton Clang
-- Sound Control
-- Maple Iosched
-- Boeffla WL Blocker
-- File Blocker
-- Simple Low Memory Killer
-- Drivedroid Support
-- Proper Fast Charging Support
-- Check commit on git for more details
+- Always updates with latest caf & linux tag.
+- Compiled with EVA GCC (https://github.com/mvaisakh/gcc-build) with optimizations for sdm845 (cortex.a75 cortex.a55).
+- Default TCP is BBR.
+- Disabled a lot of debug drivers that are not required in production builds.
+- Disabled QTI Core Control, Core Rotate and useless governors.
+- Drivedroid Support.
+- Kernelspace battery saver.
+- Maple Iosched.
+- Proper fast charging support according to temps.
+- RCU Upstream from 4.14.
+- Switched to Util clamp with uclamp assist to set values on init.
+- Ships with LSE Atomics, Fast Multiplier, Optimized In-lining, Queued Spinlocks, Dead-Code-Elimination.
+- Shipped with Berkley Packet Filter Just in Time compiler.
+- Support Pixel Thermals.
+- Sultan's perf critical IRQ framework to affine fast CPUs.
+- Sultan's simple low memory killer.
+- Check commit on git for more.
 
 ## Downloads
-- [SilverCore Kernel For Beryllium](https://bit.ly/3elaLrR)
+- [SilverCore Kernel For Beryllium](https://www.pling.com/p/1347883/#files-panel)
 
 ## Telegram Channel
 - [Telegram Channel](https://t.me/reignzupdate)
-- [Telegram Group](https://t.me/theoutsidershub)
+- [Telegram Group](https://t.me/SilverCoreKernel)
